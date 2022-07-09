@@ -1,0 +1,151 @@
+/*
+hsl(215, 51%, 70%)
+hsl(178, 100%, 50%)
+hsl(217, 54%, 11%)
+hsl(216, 50%, 16%)
+hsl(215, 32%, 27%)
+hsl(0, 0%, 100%)
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+html {
+    font-size: 62.5%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'outfit';
+    user-select: none;
+}
+
+body {
+    font-size: 10px;
+    background-color: hsl(217, 54%, 11%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nftbox {
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px -5px black;
+}
+
+.nftbox__description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.nftbox__values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.nftbox__values__eth {
+    display: flex;
+    align-items: center;
+}
+
+.nftbox__values__eth--eth {
+    color: hsl(178, 100%, 50%);
+    padding-left: 5px;
+}
+
+.nftbox__values__time {
+    display: flex;
+    align-items: center;
+}
+
+.nftbox__values__time--icon {
+    padding-right: 5px;
+}
+
+.nftbox__values__time--days {
+    color: hsl(215, 51%, 70%);
+}
+
+.nftbox__user {
+    display: flex;
+    align-items: center;
+}
+
+.nftbox__user--image {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.nftbox__user--text {
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+    padding-left: 15px;
+}
+
+.nftbox__type--text, .author {
+    transition: color .25s ease-in-out;
+}
+
+.nftbox__type--text:hover, .author:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.nftbox--image {
+    width: 250px;
+    border-radius: 5px;
+
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+}
+
+.nftbox__image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.nftbox--image:hover {
+    opacity: 0.4;
+}
+
+.hoverview {
+    width: 40px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+
+.line {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.author {
+    color: white;
+}
+
+.attribution {
+    color: hsl(215, 51%, 70%);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="nftbox">
+    <div class="nftbox__image">
+      <img class="hoverview" src="images/icon-view.svg" alt="">
+      <img class="nftbox--image" src="images/image-equilibrium.jpg" alt="">
+    </div>
+    
+    <div class="nftbox__type">
+      <h1 class="nftbox__type--text">Equilibrium #3429</h1>
+    </div>
+
+    <div class="nftbox__description">
+      <h2 class="nftbox__description--text">Our Equilibrium collection promotes balance and calm.</h2>
+    </div>
+
+    <div class="nftbox__values">
+      <div class="nftbox__values__eth">
+        <img class="nftbox__values__eth--icon" width="10px" src="images/icon-ethereum.svg" alt="">
+        <p class="nftbox__values__eth--eth">0.041 ETH</p>
+      </div>
+      <div class="nftbox__values__time">
+        <img class="nftbox__values__time--icon" width="15px" src="images/icon-clock.svg" alt="">
+        <p class="nftbox__values__time--days">3 days left</p>
+      </div>
+
+    </div>
+    <hr class="line">
+    <div class="nftbox__user">
+      <img class="nftbox__user--image" src="images/image-avatar.png" alt="">
+      <p class="nftbox__user--text">
+        Creation of <span class="author">Jules Wyvern</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AlyferJT">Alyfer</a>.
+  </div>
+</body>
+</html>
